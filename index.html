@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS Box Model 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding-top: 50px;
+        }
+
+        div.outer-box {
+            margin: auto;
+            padding: 35px;
+            width: 80px;
+            box-shadow: inset 0 0 22px indianred;
+            border-radius: 50%;
+        }
+
+        div.outer-box > div.inner-box {
+            padding: 0 0px 100px 0px;
+            border-radius: 3%;
+            box-shadow: inset 0 0 22px seagreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; color: #333;">Thực hành: Mô hình Hộp (CSS Box Model 2)</h1>
+
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+
+</body>
+</html>
